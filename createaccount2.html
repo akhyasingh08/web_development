@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <style>
+        body{
+            justify-content:space-evenly;
+            align-items: center;
+            display: flex;
+            margin-top: 180px;
+        }
+        .outer {
+            margin-top: -60px;
+            display: flex;
+            justify-content: center;
+            width: 850px;
+            height: 550px;
+            border: 3px solid rgb(43, 94, 206);
+            overflow: hidden;
+            background-color: rgb(137, 167, 231);
+            border-radius: 20px;
+            align-items: center;
+        }
+
+        .main-header1 {
+            text-align: center;
+            width: 50%;
+        }
+
+        .main-header1 img {
+            margin-left: -10px;
+        }
+
+        .main-header2 {
+            text-align: center;
+            width: 50%;
+        }
+
+        .mainheader2 h1 {
+            font-size: 5px;
+            color: rgb(43, 94, 206);
+        }
+
+        .main-header2 hr {
+            width: 200px;
+            margin: auto;
+            background: #b3ff99;
+            border: none;
+        }
+
+        .main-header2 input {
+            padding: 0.3rem;
+            margin: 1.2px 0px;
+            border: none;
+            border-bottom: 2px solid rgb(43, 94, 206);
+            font-size: 1.4rem;
+            background: transparent;
+            outline: none;
+            color: black;
+        }
+
+        .main-header2 button {
+            padding: 0.5rem 2rem;
+            font-size: 1rem;
+            background: rgb(77, 116, 199);
+            color: black;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .log-in{
+            font-size: 2vh; color: rgb(82, 78, 78);
+            margin-bottom: 18px;
+        }
+        .main-header2 .fa{
+            position: absolute;
+            left : 820px;
+            margin-top: -40px;
+            display: block;
+        }
+        .main-header2 .input-field.error input{
+            border-color: rgb(237, 32, 32);
+        }
+        .main-header2 .input-field.error .fa{
+            color: red;
+        }
+        .main-header2 .input-field.success input{
+            border-color: green;
+        }
+        .main-header2 .input-field.success .fa{
+            color: green;
+        }
+        span{
+            position: relative;
+            right: 115px;
+            font-size: 13px;
+        }
+        .main-header2 .input-field.error span{
+            color: red;
+        }
+        .main-header2 .input-field.success span{
+            color: green;
+        }
+    </style>
+    <title>Create Account</title>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="main-header1">
+            <img src="https://global-uploads.webflow.com/624fdc5e82dc83514cd9d166/630327e837665d3e7d968e54_aaaaa.png"
+                width="400px" height="360px">
+        </div>
+        <div class="main-header2">
+            <h1>WELCOME</h1>
+            <div class="input-field">
+            <p><input type="text" id="username" placeholder="Username"></p>
+            <i class="fa" aria-hidden="true"></i>
+            <span></span>
+            </div>
+            <div class="input-field">
+            <p><input type="email" id="email" placeholder="Email id"></p>
+            <p class="icon"><i class="fa" aria-hidden="true"></i></p>
+            <!--<p class="icon"></p><i class="fa-solid fa-circle-exclamation"></i></p>-solid fa-circle-check-->
+            <span> </span>
+            </div>
+            <div class="input-field">
+            <p><input type="password" id="password" placeholder="Password"></p>
+            <p class="icon"><i class="fa" aria-hidden="true"></i></p>
+            <span></span>
+            </div>
+            <div class="input-field">
+            <p><input type="confirm password" id="password2" placeholder="Confirm Password"></p>
+            <p class="icon"><i class="fa" aria-hidden="true"></i></p>
+            <span></span>
+            </div>
+            <p id="SIGN UP"><button>SIGN UP</button></p>
+            <p class="log-in">Have an Account?<a href="loginpage2.html">Log-In</a></p>
+            <script src="createaccount.js">
+            </script>
+            </div>
+        </div>
+            
+</body>
+
+</html>
